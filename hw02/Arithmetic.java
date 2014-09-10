@@ -68,5 +68,5 @@
             System.out.printf("Total cost with tax = "+"%.2f\n", totalCost2$);
             
             
-        } // end maing method
+        } // end main method
     } // end class
