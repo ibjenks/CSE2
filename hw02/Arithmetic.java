@@ -43,26 +43,26 @@
             System.out.println("1 box of envelopes");
             System.out.println("Cost per box of envelopes = "+envelopeCost$+" ");
             
-            totalSockCost$=nSocks*sockCost$;
-            totalTaxSocks$=totalSockCost$*taxPercent;
+            totalSockCost$=nSocks*sockCost$; // calculates total cost of socks without tax
+            totalTaxSocks$=totalSockCost$*taxPercent; // calculates total tax cost of socks
             System.out.println("Total cost of socks without tax = "+totalSockCost$+" ");
             System.out.printf("Tax of total cost of socks = "+"%.2f\n", totalTaxSocks$);
             
-            totalGlassCost$=nGlasses*glassCost$;
-            totalTaxGlass$=totalGlassCost$*taxPercent;
+            totalGlassCost$=nGlasses*glassCost$; // calculates total cost of glasses without tax
+            totalTaxGlass$=totalGlassCost$*taxPercent; // calculates total tax cost of glasses
             System.out.println("Total cost of glasses without tax = "+totalGlassCost$+" ");
             System.out.printf("Tax of total cost of glasses = "+"%.2f\n", totalTaxGlass$);
             
-            totalEnvelopeCost$=nEnvelopes*envelopeCost$;
-            totalTaxEnvelopes$=totalEnvelopeCost$*taxPercent;
+            totalEnvelopeCost$=nEnvelopes*envelopeCost$; // calculates total cost of boxes of envelopes without tax
+            totalTaxEnvelopes$=totalEnvelopeCost$*taxPercent; // calculates total tax cost of box of envelopes
             System.out.println("Total cost of envelopes without tax = "+totalEnvelopeCost$+" ");
             System.out.printf("Tax of total cost of envelopes = "+"%.2f\n",  totalTaxEnvelopes$);
             
-            totalTax$ = totalTaxEnvelopes$+totalTaxGlass$+totalTaxSocks$;
-            totalCost1$ = totalSockCost$+totalGlassCost$+totalEnvelopeCost$;
-            totalCost2$ = totalCost1$+totalTax$;
+            totalTax$ = totalTaxEnvelopes$+totalTaxGlass$+totalTaxSocks$; // calculates total tax of all products
+            totalCost1$ = totalSockCost$+totalGlassCost$+totalEnvelopeCost$; // calculates total of all products without tax
+            totalCost2$ = totalCost1$+totalTax$; // calculates total of all products with tax
             
-           
+           // print out all totals (tax, without tax, and w/ tax)
            System.out.printf("Total cost without tax = "+"%.2f\n", totalCost1$);
             System.out.printf("Total tax = "+"%.2f\n", totalTax$);
             System.out.printf("Total cost with tax = "+"%.2f\n", totalCost2$);
