@@ -113,11 +113,11 @@ public class NumberStack{
           
           
           int b1 = 1;
-          int c1 = 0;
-          int e1 = 0;
+          int c1 = 1;
+          int e1 = 1;
           int f1 = 0;
           int h1 = 0;
-          int l1 = 0;
+          int l1 = 1;
           
           
           System.out.println("Using do-while loops:");
