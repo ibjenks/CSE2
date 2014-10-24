@@ -20,13 +20,13 @@ public class Methods{
         int x = -1;
         Scanner scan = new Scanner(System.in);
         
-        while (x<0){
+        
             while (!scan.hasNextInt()){
                 scan.next();
-                System.out.println("You did not enter an int");
+                System.out.println("You did not enter an int, try again");
             }
             x = scan.nextInt();
-        }
+        
         return x;
     }
 
