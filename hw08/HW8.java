@@ -70,12 +70,13 @@ public static char getInput(Scanner a, String b, int y){ //method that receives 
     
     
 while (true){ // while loop used to repeat inner body code until correct input is entered
+    numberWrong++; // add 1 to numberWrong variable
     
     input = scan.next();
     int length = input.length();
     if (length >1){         // checks if whatever is entered is greater than one character
         System.out.println("Enter exactly one character: try again"); // if more than one char is entered, print statement
-        numberWrong++; // add 1 to numberWrong variable
+        
         continue; // restart outermost while loop
         
         
@@ -93,12 +94,11 @@ while (true){ // while loop used to repeat inner body code until correct input i
         }
         else{ // if the char isnt equal to any of the chars in string b, then print statement below
             System.out.println("You did not enter a character in the list \"YyNn\": Try again");
-            if(numberWrong == 5){ // if an incorrect char has been entered 5 times then do if
+            if(numberWrong == y){ // if an incorrect char has been entered 5 times then do if
                 x = 32; // sets char to a literal that is ' '
-                System.out.println("You failed 5 times"); // print statement
+                System.out.println("You failed "+y+" times"); // print statement
                 return x; //return char literal
             }
-            numberWrong++; // add one to numberWrong variable
             continue; // restart outermost while loop
         }
     
